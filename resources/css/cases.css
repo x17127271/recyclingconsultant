@@ -1,0 +1,42 @@
+.two-column-box1,
+.two-column-box4,
+.two-column-box5,
+.two-column-box8 {
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+ul {
+  text-align: center;
+}
+
+.cases-header {
+  padding: 20px;
+}
+
+.three-column-box {
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .cases-header p {
+    text-align: center;
+  }
+}
