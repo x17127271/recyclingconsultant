@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.text-block {
+    padding: 20px;
+}
