@@ -13,42 +13,42 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./resources/css/main.css" />
     <link rel="stylesheet" type="text/css" href="./resources/css/contact.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
 </head>
 
 <body onload="initialize_map(); add_map_point(-6.2425, 53.34859);">
     <header>
         <div id="navBar" class="nav-bar">
-            <a href="index.html">HOME</a>
-
-            <a href="cases.html">ABOUT RECYCLING</a>
-
-            <a href="services.html">OUR SERVICES</a>
-
-            <a href="about.html">ABOUT US</a>
-
             <a href="contact.html">CONTACT US</a>
-
+            <a href="cases.html">ABOUT RECYCLING</a>
+            <a href="services.html">OUR SERVICES</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="index.html">HOME</a>
             <a href="javascript:void(0);" class="icon" onclick="showResponsive()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </header>
     <main>
-            <div id="map" class="map"></div>
-            
+        <div class="welcome-section">
+            <div class="text-block">
+                <h1>
+                    Contact us!
+                </h1>
+
+                <hr>
+                <p>Our experts will be happy to schedule an appointment with you.</p>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+
         <section>
             <div class="section-full-width">
-                <div class="pagetitle">
-                    <h1>
-                        Contact us!
-                    </h1>
 
-                    <hr>
-                    <p>Our experts will be happy to schedule an appointment with you.</p>
-                </div>
                 <div class="form-container">
-                    <form action="https://formspree.io/mjvklypa" method="POST" id="contact-form" enctype="application/x-www-form-urlencoded">
+                    <form action="https://formspree.io/mjvklypa" method="POST" id="contact-form"
+                        enctype="application/x-www-form-urlencoded">
                         <h4>* This fields are required</h4>
                         <div class="input">
                             <label>
@@ -69,7 +69,8 @@
                             </label>
                             <label>
                                 How can we help you?
-                                <textarea name="help-description" placeholder="Our company is interested to implement recycling systems..."></textarea>
+                                <textarea name="help-description"
+                                    placeholder="Our company is interested to implement recycling systems..."></textarea>
                             </label>
                             <div class="submit-area">
                                 <label>
@@ -82,7 +83,7 @@
             </div>
         </section>
     </main>
-        <footer class="footer-container">
+    <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-content-icons">
                 <div>
