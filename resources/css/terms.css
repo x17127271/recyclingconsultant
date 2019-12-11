@@ -8,6 +8,10 @@ p {
   text-align: justify;
 }
 
+.section-terms{
+	margin: 20px;
+}
+
 
 @media screen and (min-width: 1024px) {
 	section{
@@ -16,6 +20,6 @@ p {
 
 
 	.section-terms{
-		margin: 0 80px;
+		margin: 10%;
 	}
 }

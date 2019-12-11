@@ -92,7 +92,7 @@
 .slider__txt {
   color:white;
   margin-bottom: 3rem;
-  max-width: 300px;
+  max-width: 600px;
 }
 
 @keyframes check {

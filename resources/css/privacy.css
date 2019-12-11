@@ -8,6 +8,9 @@ p {
   text-align: justify;
 }
 
+.section-privacy{
+	margin: 20px;
+}
 
 @media screen and (min-width: 1024px) {
 	section{
@@ -16,6 +19,6 @@ p {
 
 
 	.section-privacy{
-		margin: 0 80px;
+		margin: 10%;
 	}
 }
