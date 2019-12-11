@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-p {
-  text-align: justify;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
 .two-column-box1 {
   background-image: url(https://images.unsplash.com/photo-1457694587812-e8bf29a43845?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);
   background-size: cover;
@@ -23,29 +14,7 @@ h2 {
   text-align: center;
 }
 
-.about {
-  text-align: center;
-  height: inherit;
-  background: black;
-  color: white;
-}
 
-.about-item {
-  padding: 20px;
-}
-
-#about {
-  font-weight: 500;
-  color: white;
-  background-color: #0000007d;
-}
-
-#about:hover {
-  font-weight: 500;
-  color: white;
-  background-color: #0000007d;
-  border-color: lightgray;
-}
 
 .two-column-box2 {
   height: inherit;
