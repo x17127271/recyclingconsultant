@@ -12,3 +12,40 @@ p {
 .text-block {
     padding: 20px;
 }
+
+.img-consultant4 {
+    background-image: url(../images/consultant4.jpg);
+    background-size: cover;
+    height: 260px;
+}
+
+.img-consultant3 {
+    background-image: url(../images/consultant3.jpg);
+    background-size: cover;
+    height: 260px;
+}
+
+.img-consultant2 {
+    background-image: url(../images/consultant2.jpg);
+    background-size: cover;
+    height: 260px;
+}
+
+.img-consultant1 {
+    background-image: url(../images/consultant1.jpg);
+    background-size: cover;
+    height: 260px;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-block {
+        height: inherit;
+    }
+
+    .img-consultant4,
+    .img-consultant3,
+    .img-consultant2,
+    .img-consultant1 {
+        height: inherit;
+    }
+}

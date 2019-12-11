@@ -9,23 +9,25 @@
     <meta name="description"
         content="As part of our commitment to excellent customer service, Envirogreen Recycling provides a free waste audit to all our clients throughout Ireland in an effort to" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./resources/css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/contact.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
 </head>
 
-<body>
+<body onload="initialize_map(); add_map_point(-6.2425, 53.34859);">
     <header>
         <div id="navBar" class="nav-bar">
             <a href="index.html">HOME</a>
 
-            <a href="cases.html">CASES STUDY</a>
+            <a href="cases.html">ABOUT RECYCLING</a>
 
             <a href="services.html">OUR SERVICES</a>
 
             <a href="about.html">ABOUT US</a>
 
-            <a href="contact.html">CONTACT US</a>
+            <a href="Contact.html">CONTACT US</a>
 
             <a href="javascript:void(0);" class="icon" onclick="showResponsive()">
                 <i class="fa fa-bars"></i>
@@ -33,18 +35,22 @@
         </div>
     </header>
     <main>
+            <div id="map" class="map"></div>
+            
         <section>
             <div class="section-full-width">
                 <div class="pagetitle">
-                    <h2>
+                    <h1>
                         Contact us!
-                    </h2>
+                    </h1>
+
+                    <hr>
                     <p>Our experts will be happy to schedule an appointment with you.</p>
                 </div>
                 <div class="form-container">
-                    <form action=" " method="POST" id="contact-form" enctype="application/x-www-form-urlencoded">
-                        <div class="fields">
-                            <h4>* This fields are required</h4>
+                    <form action="https://formspree.io/mjvklypa" method="POST" id="contact-form" enctype="application/x-www-form-urlencoded">
+                        <h4>* This fields are required</h4>
+                        <div class="input">
                             <label>
                                 First name: *
                                 <input required="required" type="text" name="first-name" />
@@ -63,25 +69,52 @@
                             </label>
                             <label>
                                 How can we help you?
-                                <textarea name="help-description"
-                                    placeholder="Our company is interested to implement recycling systems...">
-                            </textarea>
+                                <textarea name="help-description" placeholder="Our company is interested to implement recycling systems..."></textarea>
                             </label>
-                            <label>
-                                <input type="submit" value="Submit" />
-                            </label>
+                            <div class="submit-area">
+                                <label>
+                                    <input class="submit-button" type="submit" value="SUBMIT" />
+                                </label>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <ul class="footer-list">
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
+        <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-content-icons">
+                <div>
+                    <div class="about-button">
+                        <a class="primary" href="about.html">ABOUT US</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-content-legals">
+                <div class="footer-content-legals-content">
+                    <div>
+                        <ul class="footer-list">
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="privacy.html#cookies">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        © 2019 Deep Blue Consultants
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <div
         style="display: block; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; border-top: 4px solid rgb(68, 68, 68); position: fixed;">
@@ -91,7 +124,9 @@
             </a>
             <a href="#" style="color: rgb(68, 68, 68);">Read More</a></span>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <script src="./resources/js/map.js"></script>
+    <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-3x top"></i></a>
     <script>
         function showResponsive() {
             var navBar = document.getElementById("navBar");

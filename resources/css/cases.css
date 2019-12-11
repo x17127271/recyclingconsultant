@@ -2,9 +2,16 @@
 .two-column-box4,
 .two-column-box5,
 .two-column-box8 {
-  background-color: #e5e5e5;
+  background-color: #f0f0f0;
   padding: 20px;
+  height: inherit;
 }
+
+.cases-header{
+background-color:white;
+}
+
+section
 
 h1,
 h2,
@@ -23,6 +30,7 @@ li {
 
 ul {
   text-align: center;
+  padding: 0;
 }
 
 .cases-header {
@@ -33,10 +41,54 @@ ul {
   background-color: white;
   padding: 25px;
   text-align: center;
+  height: inherit;
+}
+
+.img-resources {
+  background-image: url(../images/resources.jpg);
+  background-size: cover;
+  height: 260px;
+}
+
+.img-energy {
+  background-image: url(../images/saveenergy.JPG);
+  background-size: cover;
+  height: 260px;
+}
+
+.img-environment {
+  background-image: url(../images/environment.jpg);
+  background-size: cover;
+  height: 260px;
+}
+
+.img-landfill {
+  background-image: url(../images/landfill.jpg);
+  background-size: cover;
+  height: 260px;
 }
 
 @media screen and (min-width: 1024px) {
   .cases-header p {
     text-align: center;
+  }
+
+  .img-energy,
+  .img-environment,
+  .img-landfill,
+  .img-resources {
+    height: inherit;
+  }
+
+  .full-width{
+    width: 100%;
+    display: inline-block;
+    height: inherit;
+  }
+
+  .three-columns{
+    width: 33.33%;
+    float: left;
+    height: inherit;
   }
 }

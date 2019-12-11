@@ -3,9 +3,9 @@
 .pagetitle {
     padding: 20px;
 }
+
 .pagetitle h2{
 	text-align: center;
-	display: block;
 	margin: 50px 0;
 	clear: both;
 	border: solid 2px black;
@@ -15,28 +15,13 @@
     padding: 20px;
 }
 
-.menus{
-	width: 100%;
-	border: solid 1px red;
-}
-
-#menu{
-	float:left;
-	text-align: center;
-	width: 20%;
-	margin: 30px 0;
-}
-
-label {
-	
-}
 
 input {
 	width: 100%;
 	height: 30px;
 	border-radius: 7px;
 	border: solid 1px lightgrey;
-	margin-bottom: 10px;
+	margin: 20px 0;
 }
 
 textarea{
@@ -44,6 +29,41 @@ textarea{
 	width: 100%;
 	border-radius: 7px;
 	border: solid 1px lightgrey;
-	margin-bottom: 10px;
+	margin: 20px 0;
 }
 
+
+.submit-button {
+	background-color: #0b6faf;
+	font-size: 16px;
+	border-radius: 999px;
+	display: inline-block;
+	width: 150px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;  
+}
+
+.submit-button:hover {
+    background-color: #008CBA;
+    color: white;
+    cursor:pointer;
+}
+
+.submit-area{
+	text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+section{
+	height: inherit;
+}
+
+.form-container {
+    padding: 0 200px;
+}
+
+}

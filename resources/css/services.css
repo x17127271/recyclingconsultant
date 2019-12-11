@@ -24,8 +24,8 @@ h2 {
 }
 
 .about {
-  align-items: center;
-  padding: 20px;
+  text-align: center;
+  height: inherit;
   background: black;
   color: white;
 }
@@ -98,5 +98,14 @@ h2 {
 
   .two-column-box1 {
     background-size: contain;
+    height: inherit;
   }
+
+  .two-column-box2,
+  .two-column-box3,
+  .two-column-box4 {
+    height: inherit;
+  }
+
+
 }
