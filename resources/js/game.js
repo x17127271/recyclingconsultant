@@ -5,7 +5,7 @@ function onDrop(event, group) {
 
     const draggableElement = document.getElementById(id);
     if (validationDrop(draggableElement, group)) {
-        openModal('Grupo no correcto');
+        openModal('This item does not belong to this group.');
         return;
     }
 
