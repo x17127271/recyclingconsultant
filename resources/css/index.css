@@ -1,20 +1,9 @@
-h1,
-h2,
-h3 {
-  text-align: center;
-}
 
-p {
-  text-align: justify;
-}
 
 .text-block {
   padding: 20px;
 }
 
-.main-par{
-  text-align: center;
-}
 
 /* Main Page Slider */
 *,
@@ -26,6 +15,20 @@ p {
 .slider {
   display: none;
 }
+
+.slider h2 {
+  font-size: 3rem;
+}
+
+.slider p {
+  font-size: 1.2rem;
+}
+
+.slider-background {
+  background-color: rgba(6,152,214,.6);
+  padding: 10px 100px;
+}
+
 .slider__nav {
   width: 12px;
   height: 12px;
