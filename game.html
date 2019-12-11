@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recycle Consultant</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description"
+        content="As part of our commitment to excellent customer service, Envirogreen Recycling provides a free waste audit to all our clients throughout Ireland in an effort to" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/game.css" />
+</head>
+
+<body>
+    <header>
+        <div id="navBar" class="nav-bar">
+            <a href="index.html">HOME</a>
+
+            <a href="cases.html">ABOUT RECYCLING</a>
+
+            <a href="services.html">OUR SERVICES</a>
+
+            <a href="about.html">ABOUT US</a>
+
+            <a href="Contact.html">CONTACT US</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="showResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="section-full-width">
+                <h2 class="text-align-center">
+                    <p><span style="color: #38d430;">what can</span> and can’t be recycled</p>
+                </h2>
+                <div class="text-align-center">
+                    <p>Drag and drop items to where you think they should go and we’ll tell if you’re right!</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-full-width">
+                <div class="draggable-area">
+                    <div id='draggableSpan1' class="draggable draggable-plastic" draggable='true' group="plastic"
+                        ondragstart='onDragStart(event);'>
+                        <i class="fas fa-wine-bottle fa-3x"></i>
+                    </div>
+
+                    <div id='draggableSpan2' class=" draggable" draggable='true' group="organic"
+                        ondragstart='onDragStart(event);'>
+                        <i class="fas fa-apple-alt fa-3x"></i>
+                    </div>
+                    <div id='draggableSpan3' draggable='true' class="draggable" group="paper"
+                        ondragstart='onDragStart(event);'>
+                        <i class="fas fa-paper-plane fa-3x"></i>
+                    </div>
+                    <div id='draggableSpan4' class="draggable" draggable='true' group="organic"
+                        ondragstart='onDragStart(event);'>
+                        <i class="fas fa-hamburger fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-full-width">
+                <div id="drogZone1" class="bin plastic-bin" ondragover='onDragOver(event);' group='plastic'
+                    ondrop='onDrop(event, "plastic");'>
+
+                    plastic
+                </div>
+                <div id="drogZone2" class="bin organic-bin" ondragover='onDragOver(event);' group='organic'
+                    ondrop='onDrop(event, "organic");'>
+                    organic
+                </div>
+                <div id="drogZone3" class="bin paper-bin" ondragover='onDragOver(event);' group='paper'
+                    ondrop='onDrop(event, "paper");'>
+                    paper
+
+                </div>
+            </div>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-content-icons">
+                <div>
+                    <div class="about-button">
+                        <a class="primary" href="about.html">ABOUT US</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-content-legals">
+                <div class="footer-content-legals-content">
+                    <div>
+                        <ul class="footer-list">
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="privacy.html#cookies">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        © 2019 Deep Blue Consultants
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showResponsive() {
+            var navBar = document.getElementById("navBar");
+            if (navBar.className === "nav-bar") {
+                navBar.className = "nav-bar responsive";
+            } else {
+                navBar.className = "nav-bar";
+            }
+        }
+    </script>
+    <script src="./resources/js/game.js"></script>
+    <script src="./resources/js/modal.js"></script>
+</body>
+
+
+</html>

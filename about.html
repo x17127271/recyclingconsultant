@@ -9,23 +9,24 @@
     <meta name="description"
         content="As part of our commitment to excellent customer service, Envirogreen Recycling provides a free waste audit to all our clients throughout Ireland in an effort to" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./resources/css/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/CSS/about.css" />
 </head>
 
-<body>
+<body onload="initialize_map(); add_map_point(-6.2425, 53.34859);">
     <header>
         <div id="navBar" class="nav-bar">
             <a href="index.html">HOME</a>
 
-            <a href="cases.html">CASES STUDY</a>
+            <a href="cases.html">ABOUT RECYCLING</a>
 
             <a href="services.html">OUR SERVICES</a>
 
             <a href="about.html">ABOUT US</a>
 
-            <a href="contact.html">CONTACT US</a>
+            <a href="Contact.html">CONTACT US</a>
 
             <a href="javascript:void(0);" class="icon" onclick="showResponsive()">
                 <i class="fa fa-bars"></i>
@@ -34,12 +35,13 @@
     </header>
     <main>
         <section>
-            <h1>
-                About Recycling Consultants
-            </h1>
+            <h1>About Deep Blue Consultants</h1>
             <div class="section-two-columns">
                 <div class="text-block">
-                    <p>Recycling Consultants???? is an independant consulting firm. We provided services to a diverse
+
+                    <h3>Mission </h3>
+                    <hr>
+                    <p> Deep Blue Consultants is an independant consulting firm. We provide services to a diverse
                         clientele
                         in the transportation, consumer products, construction, materials, financial services, Internet
                         services, manufacturing, petrochemical and waste management industries, as well as government
@@ -59,30 +61,34 @@
                 </div>
             </div>
             <div class="section-two-columns">
-                <img alt="consultant" src="./resources/images/consultant1.jpg">
+                <div class="img-consultant1"></div>
             </div>
         </section>
         <section>
             <div class="section-two-columns">
                 <div class="text-block">
-                    <p>At Recycling Consultants?? we are committed to providing our customers with a reliable,
+                    <h3> Level of expertise </h3>
+                    <hr>
+                    <p> At Deep Blue Consultants we are committed to providing our customers with a reliable,
                         consistent,
                         cost
                         effective and environmentally friendly waste management service. Our motto "bins collected on
                         time,
-                        every time," is at the heart of our business. We pride ourselves on our reliable collection
+                        every time" is at the heart of our business. We pride ourselves on our reliable collection
                         service
                         and
                         we are committed to this level of service.</p>
                 </div>
             </div>
             <div class="section-two-columns">
-                <img src="./resources/images/consultant2.jpg">
+                    <div class="img-consultant2"></div>
             </div>
         </section>
         <section>
             <div class="section-two-columns">
                 <div class="text-block">
+                    <h3> First-class customer service </h3>
+                    <hr>
                     <p>We aim to offer a first class service to our customers and best value for money. We are committed
                         to
                         promoting sustainability by reducing the volume of waste going to landfill, and our goal is to
@@ -94,12 +100,14 @@
                 </div>
             </div>
             <div class="section-two-columns">
-                <img src="./resources/images/consultant3.jpg">
+                    <div class="img-consultant3"></div>
             </div>
         </section>
         <section>
             <div class="section-two-columns">
                 <div class="text-block">
+                    <h3> Location </h3>
+                    <hr>
                     <p>Our head office is located in Mayor Street, IFSC, Dublin and boasts a 9 acre facility, 7.5 acres
                         of
                         which is under roof. The site is designed to manage the ever increasing volumes of recyclable
@@ -111,33 +119,56 @@
                 </div>
             </div>
             <div class="section-two-columns">
-                <img src="./resources/images/consultant4.jpg">
+                    <div class="img-consultant4"></div>
             </div>
         </section>
         <section>
             <div class="section-full-width">
                 <div class="text-block">
                     <p> 50+ Years in Bussines 1,150+ Completed projects 423039 Happy Client Experiences </p>
+                    <div id="map" class="map"></div>
                 </div>
             </div>
         </section>
+        <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-3x top"></i></a>
+
     </main>
-    <footer>
-        <ul class="footer-list">
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-content-icons">
+                <div>
+                    <div class="about-button">
+                        <a class="primary" href="about.html">ABOUT US</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-content-legals">
+                <div class="footer-content-legals-content">
+                    <div>
+                        <ul class="footer-list">
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="privacy.html#cookies">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        © 2019 Deep Blue Consultants
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-    <div
-        style="display: block; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: inherit; bottom: 0px; border-top: 4px solid rgb(68, 68, 68); position: fixed;">
-        <span>This website uses cookies to improve your experience. We'll assume
-            you're ok with this, but you can opt-out if you wish.
-            <a href="#" class="medium cli-plugin-button cli-plugin-main-button"
-                style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">Accept
-            </a>
-            <a href="#" style="color: rgb(68, 68, 68);">Read More</a></span>
-    </div>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <script src="./resources/js/map.js"></script>
 
     <script>
         function showResponsive() {
