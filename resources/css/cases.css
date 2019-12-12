@@ -2,8 +2,7 @@
 .two-column-box4,
 .two-column-box5,
 .two-column-box8 {
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: #ffffff;
   height: inherit;
 }
 
@@ -11,13 +10,6 @@
 background-color:white;
 }
 
-section
-
-h1,
-h2,
-h3 {
-  text-align: center;
-}
 
 p {
   text-align: justify;
@@ -68,10 +60,14 @@ ul {
   height: 260px;
 }
 
+
+
 @media screen and (min-width: 1024px) {
   .cases-header p {
     text-align: center;
   }
+
+ 
 
   .img-energy,
   .img-environment,

@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 p {
   font-size: 16px;
-  text-align: center;
+  text-align: justify;
 }
 
 hr {
@@ -98,6 +98,7 @@ header {
   text-align: center;
   color: white;
   text-decoration: none;
+  padding: 7px;
 }
 
 footer {
@@ -176,7 +177,7 @@ text-decoration: none;
 .footer-content-icons {  
   display: flex;  
   justify-content: space-between;
-  padding: 120px 30px 0px 30px;
+  padding: 40px 30px 0px 30px;
 }
 
 
@@ -204,8 +205,34 @@ img {
   max-height: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+.text-padding {
+  padding: 60px;
+}
 
+.top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 80px 30px;
+  color: #2196f37d;
+}
+
+.top:hover {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 80px 30px;
+  color: #008CBA;
+}
+
+.game-link {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .game-link {
+    display: block;
+  }
 
   section {
     height: 550px;
@@ -255,21 +282,7 @@ img {
   }
 
 
-  .top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 80px 30px;
-    color: #2196f37d;
-  }
 
-  .top:hover {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 80px 30px;
-    color: #008CBA;
-  }
 
   .primary {
     background-color:#0b6faf00; 

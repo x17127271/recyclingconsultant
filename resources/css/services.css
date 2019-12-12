@@ -19,29 +19,25 @@
 .two-column-box2 {
   height: inherit;
   background-color: #e5e5e5;
-  padding: 20px;
 }
 
 .two-column-box3 {
   background-color: #e5e5e5;
-  padding: 20px;
 }
 .two-column-box4 {
   background-image: url(https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   background-size: cover;
-  padding: 20px;
 }
 
 .WEEE {
   list-style: none;
   font-size: 1em;
   color: white;
-  background-color: #80808054;
-  padding: 30px;
+  background-color: #80808054;  
+  padding: 20px;
 }
 
 .container-waste {
-  padding: 20px;
   color: white;
   background: linear-gradient(
     90deg,
@@ -51,12 +47,14 @@
   );
 }
 
-.three-column-box {
-  background-color: white;
-  padding: 20px;
-}
+
+
 
 @media screen and (min-width: 1024px) {
+  .section-resized {
+    height: 400px !important;
+  }
+
   .about p {
     text-align: center;
   }
